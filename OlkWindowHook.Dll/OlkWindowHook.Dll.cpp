@@ -44,7 +44,7 @@ BOOL IsOlkExeProcess(HWND hwnd) {
         TCHAR processName[MAX_PATH];
         if (GetModuleBaseName(hProcess, NULL, processName, sizeof(processName) / sizeof(TCHAR))) {
             CloseHandle(hProcess);
-            return _tcsicmp(processName, L"olk.exe") == 0;
+            return _tcsicmp(processName, L"outlook.exe") == 0;
         }
         CloseHandle(hProcess);
     }
