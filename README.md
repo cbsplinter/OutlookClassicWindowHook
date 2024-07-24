@@ -15,7 +15,7 @@ You can find the installer or a standalone version [on the Releases page here](h
 
 ## How it works
 
-1. Checks for new instances of `olk.exe` every 0.5 seconds
+1. Checks for new instances of `outlook.exe` every 0.5 seconds
 2. If a new instance is found, hooks in to the first window created
 3. Intercepts the `WM_CLOSE` event and instead calls `ShowWindow(pCwp->hwnd, SW_HIDE)`
 
