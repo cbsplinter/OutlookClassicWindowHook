@@ -263,7 +263,7 @@ void MonitorProcess() {
     DWORD prevProcessID = 0;
 
     while (appRunning) {
-        DWORD processID = FindProcessId(L"olk.exe");
+        DWORD processID = FindProcessId(L"outlook.exe");
 
         if (processID != 0 && processID != prevProcessID) {
             InjectDLL(processID, dllPath.c_str());
